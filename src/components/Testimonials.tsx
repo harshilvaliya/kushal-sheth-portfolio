@@ -2,23 +2,23 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/animations";
 import type { TestimonialItem } from "../types/index";
+import chiragValaImg from "../assets/chirag-vala-img.webp";
+import milanShethImg from "../assets/milan-sheth-img.webp";
 
 const testimonials: TestimonialItem[] = [
   {
     quote:
-      "Kushal's strategic approach to digital marketing transformed our B2B lead generation process. His data-driven insights helped us achieve a 150% increase in qualified leads.",
-    author: "John Smith",
-    position: "CEO, TechCorp",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80",
+      "Working with Kushal has been transformative for our business. His LinkedIn outreach strategy helped us connect with key decision-makers and close major deals.",
+    author: "Chirag Vala",
+    position: "Red & Black Productions",
+    image: chiragValaImg,
   },
   {
     quote:
-      "Working with Kushal has been transformative for our business. His LinkedIn outreach strategy helped us connect with key decision-makers and close major deals.",
-    author: "Sarah Johnson",
-    position: "Marketing Director, GrowthCo",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80",
+      "Kushal's strategic approach to digital marketing transformed our B2B lead generation process. His data-driven insights helped us achieve a 150% increase in qualified leads.",
+    author: "Milan Sheth",
+    position: "Chetana Food Zone",
+    image: milanShethImg,
   },
 ];
 
@@ -52,6 +52,7 @@ const Testimonials: React.FC = () => {
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.author}
+                  loading="lazy"
                   className="object-cover w-12 h-12 rounded-full"
                 />
                 <div className="ml-4">

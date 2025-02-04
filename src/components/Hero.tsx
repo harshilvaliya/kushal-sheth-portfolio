@@ -1,7 +1,7 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineArrowForward } from "react-icons/md";
-import KushalShethImg from "../assets/kushal-sheth-img.jpg";
+import KushalShethImg from "../assets/kushal-sheth-img.webp";
 
 const Hero: React.FC = () => {
   return (
@@ -39,6 +39,7 @@ const Hero: React.FC = () => {
             <img
               src={KushalShethImg}
               alt="Kushal Sheth"
+              loading="lazy"
               className="rounded-2xl shadow-xl w-full object-cover aspect-[4/5]"
             />
             <div className="absolute inset-0 bg-blue-600/10 rounded-2xl" />
