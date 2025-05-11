@@ -5,6 +5,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import CampaignPerformance from "./components/CampaignPerformance";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <About />
       <Services />
       <Testimonials />
+      <CampaignPerformance />
       <Footer />
     </div>
   );
