@@ -5,18 +5,18 @@ import KushalShethImg from "../assets/kushal-sheth-img.webp";
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">
-      <div className="container px-6 mx-auto">
-        <div className="grid items-center gap-12 md:grid-cols-2">
+    <section className="pt-28 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-blue-50 to-white">
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="grid items-center gap-8 md:gap-12 md:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Driving B2B Growth Through Strategic Digital Marketing
             </h1>
-            <p className="mb-8 text-xl text-gray-600">
+            <p className="mb-6 sm:mb-8 text-lg sm:text-xl text-gray-600">
               Helping businesses achieve sustainable growth through data-driven
               marketing strategies and targeted outreach.
             </p>

@@ -39,7 +39,7 @@ const Testimonials: React.FC = () => {
         >
           Testimonials
         </motion.h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}

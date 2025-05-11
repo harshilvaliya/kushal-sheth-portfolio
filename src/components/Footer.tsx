@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
       viewport={{ once: true }}
       variants={fadeIn}
     >
-      <div className="container px-6 mx-auto">
-        <div className="grid gap-12 md:grid-cols-2">
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="grid gap-8 sm:gap-12 grid-cols-1 md:grid-cols-2">
           <div>
             <motion.h2 variants={fadeIn} className="mb-6 text-2xl font-bold">
               Let's Connect
