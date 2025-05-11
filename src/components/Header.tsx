@@ -15,7 +15,7 @@ const Header: React.FC = () => {
             <h1 className="text-xl font-bold text-blue-600">Kushal Sheth</h1>
           </a>
           <nav className="hidden space-x-8 md:flex">
-            {["About", "Services", "Testimonials", "Contact"].map((item) => (
+            {["About", "Services", "Performance", "Testimonials", "Contact"].map((item) => (
               <motion.a
                 key={item}
                 whileHover={{ scale: 1.1 }}
