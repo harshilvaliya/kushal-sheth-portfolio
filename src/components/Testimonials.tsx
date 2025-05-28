@@ -10,7 +10,7 @@ const testimonials: TestimonialItem[] = [
     quote:
       "Working with Kushal has been transformative for our business. His LinkedIn outreach strategy helped us connect with key decision-makers and close major deals.",
     author: "Chirag Vala",
-    position: "Red & Black Productions",
+    position: "Filmmaker",
     image: chiragValaImg,
   },
   {
@@ -39,13 +39,13 @@ const Testimonials: React.FC = () => {
         >
           Testimonials
         </motion.h2>
-        <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
               variants={fadeIn}
               whileHover={{ scale: 1.02 }}
-              className="p-8 bg-white border border-gray-100 rounded-lg"
+              className="p-8 bg-white rounded-lg border border-gray-100"
             >
               <p className="mb-6 text-gray-600">{item.quote}</p>
               <div className="flex items-center">

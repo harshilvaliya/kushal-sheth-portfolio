@@ -12,3 +12,5 @@ export interface TestimonialItem {
   position: string;
   image: string;
 }
+
+export type PageType = "home" | "studio";
