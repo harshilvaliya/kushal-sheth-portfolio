@@ -2,14 +2,11 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import type { PageType } from "../types/index";
+import { useNavigate } from "react-router-dom";
 
-interface HeaderProps {
-  onNavigate: (page: PageType) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -44,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => onNavigate("studio")}
+              onClick={() => navigate("/studio")}
               className="ml-4 px-3 py-1.5 text-sm text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors sm:px-4 sm:py-2 sm:text-base"
             >
               Red & Black Studio

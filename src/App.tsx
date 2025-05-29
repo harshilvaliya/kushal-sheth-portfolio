@@ -1,5 +1,5 @@
-import { useState } from "react";
 import type React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,24 +7,12 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import CampaignPerformance from "./components/CampaignPerformance";
-import Studio from "./components/Studio";
-import type { PageType } from "./types/index";
+import Studio from "./pages/Studio";
 
-const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<PageType>("home");
-
-  const handleNavigate = (page: PageType) => {
-    setCurrentPage(page);
-    window.scrollTo(0, 0);
-  };
-
-  if (currentPage === "studio") {
-    return <Studio onNavigate={handleNavigate} />;
-  }
-
+const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      <Header onNavigate={handleNavigate} />
+      <Header />
       <Hero />
       <About />
       <Services />
@@ -32,6 +20,17 @@ const App: React.FC = () => {
       <Testimonials />
       <Footer />
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/studio" element={<Studio />} />
+      </Routes>
+    </Router>
   );
 };
 

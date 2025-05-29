@@ -9,3 +9,15 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Custom text selection color for Studio.tsx */
+.bg-black ::selection {
+  background-color: white; /* rnb-red */
+  color: #ff0000;
+}
+
+/* Custom text selection color for App.tsx (main portfolio) */
+.bg-white ::selection {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}

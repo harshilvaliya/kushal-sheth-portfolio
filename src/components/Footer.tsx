@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-gray-400 transition-colors hover:text-blue-400"
             >
-              શાંતિ નિર્માતા (Peacemaker) 🕊️
+              Peacemaker (શાંતિ નિર્માતા) 🕊️
             </a>
           </p>
         </div>

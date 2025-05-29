@@ -16,16 +16,19 @@ const About: React.FC = () => {
         <h2 className="mb-12 text-3xl font-bold text-center text-gray-900">
           About Me
         </h2>
-        <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-600">
+        <div className="mx-auto space-y-6 max-w-3xl text-lg text-gray-600">
           <motion.p variants={fadeIn}>
-            I'm Kushal Sheth, a B2B growth specialist focused on helping
-            companies achieve sustainable growth through strategic digital
-            marketing and sales initiatives.
+            I'm Kushal Sheth, the founder and creative director of Red & Black
+            Studio, a digital marketing powerhouse dedicated to transforming
+            brands through strategic creativity and data-driven solutions.
           </motion.p>
           <motion.p variants={fadeIn}>
-            My approach combines data-driven insights with creative strategies
-            to develop and execute campaigns that generate leads, increase
-            conversions, and maximize ROI.
+            With extensive expertise in brand strategy, content creation, and
+            performance marketing, I've helped businesses across industries
+            establish powerful online presences that drive meaningful engagement
+            and measurable growth. My approach seamlessly blends artistic vision
+            with analytical precision to deliver campaigns that not only
+            captivate audiences but also convert prospects into loyal customers.
           </motion.p>
         </div>
       </div>
