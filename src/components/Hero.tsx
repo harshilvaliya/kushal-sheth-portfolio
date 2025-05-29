@@ -2,7 +2,6 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineArrowForward } from "react-icons/md";
 import KushalShethImg from "../assets/kushal-sheth-img.webp";
-// import { Navigate } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -37,7 +36,6 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/studio"
-                // onClick={() => Navigate("")}
                 className="inline-flex items-center px-6 py-3 text-white bg-red-600 rounded-lg transition-colors hover:bg-red-700"
               >
                 Red & Black Studio
